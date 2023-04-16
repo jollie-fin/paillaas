@@ -1,2 +1,2 @@
-# paillaas (2021)
+# paillaas (2021, POC)
 Main project of Kaukolab

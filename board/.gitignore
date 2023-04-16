@@ -1,0 +1,12 @@
+*.kicad_pcb-bak
+*.zip
+*.log
+.~*
+_autosave*
+*.png
+*.sch-bak
+*.wrl
+fp-info-cache
+*~
+*nohup.out
+*.png

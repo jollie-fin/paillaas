@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>pendulum</title>
+ </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: row;
+      margin: 0;
+    }
+    fieldset {
+      border-radius: 10px;
+      border: 2px solid #84838f;
+      background: rgb(250, 250, 255);
+      margin: 5px;
+      /* width:auto;
+      overflow:hidden; */
+      /* margin-top: 20px; */
+    }
+    fieldset > fieldset {
+      border-radius: 10px;
+      border: 1px solid #646372;
+      background: rgb(245, 245, 250);
+      margin: 5px;
+    }
+    fieldset > fieldset > fieldset {
+      background: rgb(235, 235, 245);
+    }
+    label {
+        white-space:nowrap;
+    }
+
+    .wrappable {
+        white-space:normal;
+    }
+    .video {
+      width: 56.25vh;
+    }
+    .tools {
+      display: flex;
+      flex-direction: column;
+      flex: 5;
+    }
+    .motors {
+      display: flex;
+      flex-direction: row;
+      flex : 15;
+    }
+    .settings {
+      display: flex;
+      flex-direction: column;
+      flex : 40;
+    }
+    .front_settings {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex : 25;
+    }
+    .settings_element {
+      min-width: 15em;
+      flex: 1 1 80px;
+    }
+    .cockpit {
+      display: flex;
+      flex-direction: column;
+      flex : 15;
+    }
+    .cockpit_item {
+      display: flex;
+      flex-direction: row;
+      flex : 1;
+    }
+    .cockpit_mode {
+      width: 40%;
+    }
+    .cockpit_settings {
+      flex : 1;
+    }
+    .telemetry {
+      display: flex;
+      flex-direction: row;
+      flex : 30;
+    }
+    .telemetry_graph_box {
+      flex : 20;
+      flex-shrink : 0;
+    }
+    .telemetry_data {
+      flex : 10;
+    }
+
+  </style>
+  <body>
+    <script src="node_modules/rickshaw/vendor/d3.min.js "></script>
+    <script src="node_modules/rickshaw/vendor/d3.layout.min.js"></script>
+    <script src="node_modules/rickshaw/rickshaw.min.js"></script>
+    <div class="tools">
+      <fieldset class="telemetry">
+        <legend>Telemetry</legend>
+        <div class="telemetry_graph_box" id="telemetry_graph_box">
+          <div id="telemetry_graph"></div>
+        </div>
+        <div class="telemetry_data">
+          Data
+        </div>
+      </fieldset>
+      <fieldset class="settings">
+        <legend>Interface</legend>
+        <fieldset class="motors">
+          <legend>Motors</legend>
+          <fieldset class="cockpit">
+            <legend>Oscillator</legend>
+
+            <div class="cockpit_item">
+              <label class="cockpit_mode"><input type="radio" id="oscillation_free" name="oscillation" value="free"/> free</label>
+              <div class="cockpit_settings"></div>
+            </div>
+
+            <div class="cockpit_item">
+              <label class="cockpit_mode"><input type="radio" id="oscillation_fixed" name="oscillation" value="fixed"/> fixed period</label>
+              <label class="cockpit_settings"><input type="range" min="0.5" max="5" step="any"/> period</label>
+            </div>
+
+            <div class="cockpit_item">
+              <label class="cockpit_mode"><input type="radio" id="oscillation_trigger" name="oscillation" value="trigger"/> trigger</label>
+              <label class="cockpit_settings"><input id="oscillation_sustained_phase" type="range" min="0" max="20"/> phase offset</label>
+            </div>
+
+            <div class="cockpit_item">
+              <label class="cockpit_mode"><input type="radio" id="oscillation_automatic" name="oscillation" value="automatic"/> automatic</label>
+              <label class="cockpit_settings"><input id="oscillation_sustained_angle" type="range" min="0" max="20"/> angle goal</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="cockpit">
+            <legend>Length</legend>
+            <label><input type="range" min="0" max="100"/> length</label>
+          </fieldset>
+
+        </fieldset>
+        <fieldset class="front_settings">
+          <legend>Settings</legend>
+          <fieldset class="settings_element">
+            <legend>Video quality</legend>
+	    <input type="range" min="0" max="3">
+          </fieldset>
+          <fieldset class="settings_element">
+            <legend>Show graph</legend>
+            <label><input type="checkbox" id="show_graph_angle"/> angle</label>
+            <label><input type="checkbox" id="show_graph_motor"/> motor</label>
+            <label><input type="checkbox" id="show_graph_speed"/> speed</label>
+          </fieldset>
+          <fieldset class="settings_element">
+            <legend>Show telemetry</legend>
+            <label><input type="checkbox" id="show_telemetry_period"/> period</label>
+            <label><input type="checkbox" id="show_telemetry_amplitude"/> amplitude</label>
+            <label><input type="checkbox" id="show_telemetry_length"/> length</label>
+            <label><input type="checkbox" id="show_telemetry_status"/> status</label>
+          </fieldset>
+          <fieldset class="settings_element">
+            <legend>Logging</legend>
+            <button>record</button>
+            <button>screenshot</button>
+          </fieldset>
+        </fieldset>
+      </fieldset>
+    </div>
+    <fieldset class="video">
+      <legend>Video</legend>
+      <video id="video_stream" autoplay="autoplay" muted="true" class="center-block"></video>
+    </fieldset>
+    <script>
+      let box = document.querySelector("#telemetry_graph_box")
+      let data = [ { x: 0, y: 40 }, { x: 1, y: 49 }, { x: 2, y: 17 }, { x: 3, y: 42 } ];
+
+      let telemetryGraphBox = document.getElementById("telemetry_graph_box")
+      let graphEl = document.getElementById("telemetry_graph")
+      let graph = new Rickshaw.Graph( {
+              element: graphEl,
+              width: telemetryGraphBox.clientWidth,
+              height: telemetryGraphBox.clientHeight - 4,
+              series: [ {
+                      color: 'steelblue',
+                      data: data
+              } ]
+      } );
+
+      graph.render();
+      
+      let resize_graph = function() {
+          graph.configure({width : telemetryGraphBox.clientWidth, height : telemetryGraphBox.clientHeight});
+          graph.render();
+        };
+
+        var doit;
+	const resize_window = function() {
+	          graph.configure({width : 10, height : 10});
+        	  graph.render();
+		clearTimeout(doit);
+		doit = setTimeout(resize_graph, 100);
+	};
+
+      window.addEventListener('resize', resize_window);
+    </script>
+  </body>
+  </html>

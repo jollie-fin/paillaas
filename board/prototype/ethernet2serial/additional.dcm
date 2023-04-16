@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ENC28J60x-ML
+D ENC28J60 Single Chip Ethernet Interface,QFN-28
+K ENC Ethernet
+F http://ww1.microchip.com/downloads/en/devicedoc/39662e.pdf
+$ENDCMP
+#
+$CMP J1B1211CCD
+D 1 Port RJ45 Magjack Connector Through Hole 10/100 Base-T, AutoMDIX
+K RJ45 Magjack
+F https://www.amphenolcanada.com/ProductSearch/Drawings/AC/RJMG1BD3B8K1ANR.PDF
+$ENDCMP
+#
+#End Doc Library

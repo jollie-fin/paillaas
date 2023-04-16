@@ -1,0 +1,158 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 6200 1150 1050 1400
+U 607BD6C1
+F0 "ethernet" 50
+F1 "ethernet.sch" 50
+$EndSheet
+$Sheet
+S 4450 1050 1000 1500
+U 607342B7
+F0 "camera" 50
+F1 "camera.sch" 50
+F2 "SCL1" I L 4450 1500 50 
+F3 "SDA1" B L 4450 1600 50 
+F4 "SDA0" B L 4450 1250 50 
+F5 "SCL0" I L 4450 1150 50 
+F6 "CAM_GPIO" I L 4450 1900 50 
+$EndSheet
+$Sheet
+S 900  1050 1050 1550
+U 607C3517
+F0 "GPIO" 50
+F1 "GPIO.sch" 50
+F2 "MOSI" O R 1950 1150 50 
+F3 "MISO" I R 1950 1250 50 
+F4 "SCL1" O R 1950 1950 50 
+F5 "SDA1" B R 1950 2050 50 
+F6 "SCLK" O R 1950 1350 50 
+F7 "POWER_SELECT" O R 1950 1450 50 
+F8 "MOTOR_SELECT" O R 1950 1550 50 
+F9 "ACT_LED" I R 1950 2300 50 
+F10 "POWERED_LED" I R 1950 2400 50 
+F11 "nEXTRST" I R 1950 2200 50 
+$EndSheet
+$Sheet
+S 2600 1050 1100 1500
+U 607C3564
+F0 "powerIO" 50
+F1 "powerIO.sch" 50
+F2 "MOSI" I L 2600 1150 50 
+F3 "SCLK" I L 2600 1350 50 
+F4 "MOTOR_SELECT" I L 2600 1550 50 
+F5 "POWER_SELECT" I L 2600 1450 50 
+F6 "MISO" O L 2600 1250 50 
+$EndSheet
+Wire Wire Line
+	1950 1150 2600 1150
+Wire Wire Line
+	2600 1250 1950 1250
+Wire Wire Line
+	1950 1350 2600 1350
+Wire Wire Line
+	1950 1450 2600 1450
+Wire Wire Line
+	2600 1550 1950 1550
+Wire Wire Line
+	1950 1950 2300 1950
+Wire Wire Line
+	1950 2050 2300 2050
+Text Label 2300 1950 2    50   ~ 0
+SCL1
+Text Label 2300 2050 2    50   ~ 0
+SDA1
+Wire Wire Line
+	4450 1150 4200 1150
+Wire Wire Line
+	4200 1250 4450 1250
+Wire Wire Line
+	4450 1500 4200 1500
+Wire Wire Line
+	4200 1600 4450 1600
+Text Label 4200 1150 0    50   ~ 0
+SCL0
+Text Label 4200 1250 0    50   ~ 0
+SDA0
+Text Label 4200 1500 0    50   ~ 0
+SCL1
+Text Label 4200 1600 0    50   ~ 0
+SDA1
+Wire Wire Line
+	4450 1900 4000 1900
+Text Label 4000 1900 0    50   ~ 0
+CAM_GPIO
+$Sheet
+S 8150 1150 1250 1400
+U 60A4EFB9
+F0 "power" 50
+F1 "power.sch" 50
+$EndSheet
+$Sheet
+S 950  3100 2000 2000
+U 606D182B
+F0 "cm4" 50
+F1 "cm4.sch" 50
+F2 "SCL0" O R 2950 3250 50 
+F3 "CAM_GPIO" O R 2950 3650 50 
+F4 "SDA0" B R 2950 3350 50 
+F5 "LED_Act" O R 2950 3850 50 
+F6 "LED_Pwr" O R 2950 3950 50 
+F7 "nEXTRST" O R 2950 4050 50 
+$EndSheet
+Wire Wire Line
+	2950 3250 3300 3250
+Wire Wire Line
+	2950 3350 3300 3350
+Text Label 3300 3250 2    50   ~ 0
+SCL0
+Text Label 3300 3350 2    50   ~ 0
+SDA0
+Wire Wire Line
+	2950 3650 3400 3650
+Text Label 3400 3650 2    50   ~ 0
+CAM_GPIO
+Wire Wire Line
+	2950 3850 3650 3850
+Wire Wire Line
+	3650 3850 3650 2850
+Wire Wire Line
+	3650 2850 2250 2850
+Wire Wire Line
+	2250 2850 2250 2300
+Wire Wire Line
+	2250 2300 1950 2300
+Wire Wire Line
+	1950 2400 2150 2400
+Wire Wire Line
+	2150 2400 2150 2950
+Wire Wire Line
+	3550 2950 3550 3950
+Wire Wire Line
+	3550 3950 2950 3950
+Wire Wire Line
+	2150 2950 3550 2950
+Wire Wire Line
+	1950 2200 2350 2200
+Wire Wire Line
+	2350 2200 2350 2750
+Wire Wire Line
+	2350 2750 3750 2750
+Wire Wire Line
+	3750 2750 3750 4050
+Wire Wire Line
+	3750 4050 2950 4050
+$EndSCHEMATC

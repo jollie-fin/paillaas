@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name RPi_Compute_Module_4)(type KiCad)(uri /home/phi/Téléchargements/RPi-CM4-Kicad-master/RPi_Compute_Module_4.pretty)(options "")(descr ""))
+  (lib (name library)(type KiCad)(uri /home/phi/dev/paillaaS/board/library.pretty)(options "")(descr ""))
+)

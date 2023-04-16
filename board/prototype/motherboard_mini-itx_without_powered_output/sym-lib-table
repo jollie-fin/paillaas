@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Raspberry_Pi_Compute_Module_4)(type Legacy)(uri /home/phi/Téléchargements/RPi-CM4-Kicad-master/Raspberry_Pi_Compute_Module_4.lib)(options "")(descr ""))
+  (lib (name TMC5130)(type Legacy)(uri /home/phi/dev/ul_TMC5130ATA/KiCAD/2021-04-03_10-30-50/2021-04-03_10-30-50.lib)(options "")(descr ""))
+  (lib (name library)(type Legacy)(uri /home/phi/dev/paillaaS/board/library.lib)(options "")(descr ""))
+)

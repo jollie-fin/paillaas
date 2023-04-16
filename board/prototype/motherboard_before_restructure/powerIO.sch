@@ -1,0 +1,578 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	8500 2100 8850 2100
+Wire Wire Line
+	8500 2200 8850 2200
+Wire Wire Line
+	8500 2300 8850 2300
+Wire Wire Line
+	8500 2400 8850 2400
+Wire Wire Line
+	8500 2500 8850 2500
+Wire Wire Line
+	8500 2600 8850 2600
+Wire Wire Line
+	8500 2700 8850 2700
+Text Label 8850 2100 2    50   ~ 0
+SRC0
+Text Label 8850 2200 2    50   ~ 0
+SRC1
+Text Label 8850 2300 2    50   ~ 0
+SRC2
+Text Label 8850 2400 2    50   ~ 0
+SRC3
+Text Label 8850 2500 2    50   ~ 0
+SRC4
+Text Label 8850 2600 2    50   ~ 0
+SRC5
+Text Label 8850 2700 2    50   ~ 0
+SRC6
+Wire Wire Line
+	8500 2800 8850 2800
+Text Label 8850 2800 2    50   ~ 0
+SRC7
+$Comp
+L 74xx:74HC595 U6
+U 1 1 61CB7DB3
+P 2250 3000
+F 0 "U6" H 2250 3781 50  0000 C CNN
+F 1 "74HC595" H 2250 3690 50  0000 C CNN
+F 2 "Package_SO:SSOP-16_5.3x6.2mm_P0.65mm" H 2250 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 2250 3000 50  0001 C CNN
+	1    2250 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2350 1850 2400
+Wire Wire Line
+	1850 2400 2250 2400
+Wire Wire Line
+	1700 2900 1850 2900
+$Comp
+L power:GND #PWR043
+U 1 1 61CD5C94
+P 1850 3300
+F 0 "#PWR043" H 1850 3050 50  0001 C CNN
+F 1 "GND" H 1855 3127 50  0000 C CNN
+F 2 "" H 1850 3300 50  0001 C CNN
+F 3 "" H 1850 3300 50  0001 C CNN
+	1    1850 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3300 1850 3200
+NoConn ~ 2650 3500
+Wire Wire Line
+	2650 2600 2950 2600
+Text Label 2950 2600 2    50   ~ 0
+OUT0
+Wire Wire Line
+	2650 2700 2950 2700
+Text Label 2950 2700 2    50   ~ 0
+OUT1
+Wire Wire Line
+	2650 2800 2950 2800
+Text Label 2950 2800 2    50   ~ 0
+OUT2
+Wire Wire Line
+	2650 2900 2950 2900
+Text Label 2950 2900 2    50   ~ 0
+OUT3
+Wire Wire Line
+	2650 3000 2950 3000
+Text Label 2950 3000 2    50   ~ 0
+OUT4
+Wire Wire Line
+	2650 3100 2950 3100
+Text Label 2950 3100 2    50   ~ 0
+OUT5
+Wire Wire Line
+	2650 3200 2950 3200
+Text Label 2950 3200 2    50   ~ 0
+OUT6
+Wire Wire Line
+	2650 3300 2950 3300
+Text Label 2950 3300 2    50   ~ 0
+OUT7
+Wire Wire Line
+	1850 2800 1400 2800
+Wire Wire Line
+	1850 2600 1400 2600
+Text Label 1400 2600 0    50   ~ 0
+MOSI
+Text Label 1400 2800 0    50   ~ 0
+SCLK
+Wire Wire Line
+	6100 3150 5450 3150
+Wire Wire Line
+	6100 3050 5450 3050
+Text Label 6100 3050 2    50   ~ 0
+MOSI
+Text Label 6100 3150 2    50   ~ 0
+SCLK
+Wire Wire Line
+	6100 3350 5450 3350
+Wire Wire Line
+	6100 3250 5450 3250
+Text Label 6100 3250 2    50   ~ 0
+MISO
+Text Label 6100 3350 2    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	6100 3450 5450 3450
+Text Label 6100 3450 2    50   ~ 0
+POWER_SELECT
+Text Label 1250 3100 0    50   ~ 0
+POWER_SELECT
+Wire Wire Line
+	1250 3100 1850 3100
+Text HLabel 5450 3050 0    50   Input ~ 0
+MOSI
+Text HLabel 5450 3150 0    50   Input ~ 0
+SCLK
+Text HLabel 5450 3350 0    50   Input ~ 0
+MOTOR_SELECT
+Text HLabel 5450 3450 0    50   Input ~ 0
+POWER_SELECT
+Text HLabel 5450 3250 0    50   Output ~ 0
+MISO
+$Comp
+L Device:C C7
+U 1 1 60A78145
+P 3450 2900
+F 0 "C7" H 3565 2946 50  0000 L CNN
+F 1 "100n" H 3565 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3488 2750 50  0001 C CNN
+F 3 "~" H 3450 2900 50  0001 C CNN
+	1    3450 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR046
+U 1 1 60A78F59
+P 3450 3150
+F 0 "#PWR046" H 3450 2900 50  0001 C CNN
+F 1 "GND" H 3455 2977 50  0000 C CNN
+F 2 "" H 3450 3150 50  0001 C CNN
+F 3 "" H 3450 3150 50  0001 C CNN
+	1    3450 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3150 3450 3050
+Wire Wire Line
+	3450 2750 3450 2650
+$Comp
+L power:GND #PWR044
+U 1 1 60DFCBD7
+P 2250 3850
+F 0 "#PWR044" H 2250 3600 50  0001 C CNN
+F 1 "GND" H 2255 3677 50  0000 C CNN
+F 2 "" H 2250 3850 50  0001 C CNN
+F 3 "" H 2250 3850 50  0001 C CNN
+	1    2250 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3850 2250 3700
+$Comp
+L Transistor_Array:TBD62783A U7
+U 1 1 6085C953
+P 8100 2400
+F 0 "U7" H 8100 3081 50  0000 C CNN
+F 1 "TBD62783A" H 8100 2990 50  0000 C CNN
+F 2 "Package_SO:SSOP-18_4.4x6.5mm_P0.65mm" H 8100 1850 50  0001 C CNN
+F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30523&prodName=TBD62783APG" H 7800 2800 50  0001 C CNN
+	1    8100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 1900 8100 1900
+$Comp
+L power:GND #PWR047
+U 1 1 608716C1
+P 8100 3000
+F 0 "#PWR047" H 8100 2750 50  0001 C CNN
+F 1 "GND" H 8105 2827 50  0000 C CNN
+F 2 "" H 8100 3000 50  0001 C CNN
+F 3 "" H 8100 3000 50  0001 C CNN
+	1    8100 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2800 7400 2800
+Text Label 7400 2800 0    50   ~ 0
+OUT0
+Wire Wire Line
+	7700 2700 7400 2700
+Text Label 7400 2700 0    50   ~ 0
+OUT1
+Wire Wire Line
+	7700 2600 7400 2600
+Text Label 7400 2600 0    50   ~ 0
+OUT2
+Wire Wire Line
+	7700 2500 7400 2500
+Text Label 7400 2500 0    50   ~ 0
+OUT3
+Wire Wire Line
+	7700 2400 7400 2400
+Text Label 7400 2400 0    50   ~ 0
+OUT4
+Wire Wire Line
+	7700 2300 7400 2300
+Text Label 7400 2300 0    50   ~ 0
+OUT5
+Wire Wire Line
+	7700 2200 7400 2200
+Text Label 7400 2200 0    50   ~ 0
+OUT6
+Wire Wire Line
+	7700 2100 7400 2100
+Text Label 7400 2100 0    50   ~ 0
+OUT7
+$Comp
+L power:+5V #PWR045
+U 1 1 6183EEDE
+P 3450 2650
+F 0 "#PWR045" H 3450 2500 50  0001 C CNN
+F 1 "+5V" H 3465 2823 50  0000 C CNN
+F 2 "" H 3450 2650 50  0001 C CNN
+F 3 "" H 3450 2650 50  0001 C CNN
+	1    3450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR042
+U 1 1 6183F5B1
+P 1850 2350
+F 0 "#PWR042" H 1850 2200 50  0001 C CNN
+F 1 "+5V" H 1865 2523 50  0000 C CNN
+F 2 "" H 1850 2350 50  0001 C CNN
+F 3 "" H 1850 2350 50  0001 C CNN
+	1    1850 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR041
+U 1 1 618432EF
+P 1700 2900
+F 0 "#PWR041" H 1700 2750 50  0001 C CNN
+F 1 "+5V" V 1715 3028 50  0000 L CNN
+F 2 "" H 1700 2900 50  0001 C CNN
+F 3 "" H 1700 2900 50  0001 C CNN
+	1    1700 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9500 2800 9150 2800
+Wire Wire Line
+	9500 2700 9150 2700
+Wire Wire Line
+	9500 2600 9150 2600
+Wire Wire Line
+	9500 2500 9150 2500
+Wire Wire Line
+	9500 2300 9150 2300
+Wire Wire Line
+	9500 2400 9150 2400
+Wire Wire Line
+	9500 2200 9150 2200
+Text Label 9150 2800 0    50   ~ 0
+SRC0
+Text Label 9150 2700 0    50   ~ 0
+SRC1
+Text Label 9150 2600 0    50   ~ 0
+SRC2
+Text Label 9150 2500 0    50   ~ 0
+SRC3
+Text Label 9150 2300 0    50   ~ 0
+SRC5
+Text Label 9150 2400 0    50   ~ 0
+SRC4
+Text Label 9150 2200 0    50   ~ 0
+SRC6
+Wire Wire Line
+	9500 2100 9150 2100
+Text Label 9150 2100 0    50   ~ 0
+SRC7
+Text Label 1050 5400 0    50   ~ 0
+LIMITR0
+Text Label 1050 5300 0    50   ~ 0
+LIMITL0
+Wire Wire Line
+	1050 5400 1750 5400
+Wire Wire Line
+	1750 5300 1050 5300
+Wire Wire Line
+	1750 5050 1050 5050
+Text Label 1050 5050 0    50   ~ 0
+MOSI
+Text Label 1050 5150 0    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	1050 5150 1750 5150
+Wire Wire Line
+	1050 4950 1750 4950
+Text Label 1050 4950 0    50   ~ 0
+SCLK
+Wire Wire Line
+	10350 5050 10900 5050
+Text Label 10900 5050 2    50   ~ 0
+MISO
+$Sheet
+S 1750 4750 750  700 
+U 61FF8CD2
+F0 "motorU8" 50
+F1 "motor.sch" 50
+F2 "SCK" I L 1750 4950 50 
+F3 "MOSI" I L 1750 5050 50 
+F4 "CS" I L 1750 5150 50 
+F5 "MISO" O R 2500 5050 50 
+F6 "LIMITL" I L 1750 5300 50 
+F7 "LIMITR" I L 1750 5400 50 
+$EndSheet
+Text Label 3050 4950 0    50   ~ 0
+SCLK
+Wire Wire Line
+	3050 4950 3750 4950
+Wire Wire Line
+	3050 5150 3750 5150
+Text Label 3050 5150 0    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	2500 5050 2700 5050
+Wire Wire Line
+	3750 5300 3050 5300
+Wire Wire Line
+	3050 5400 3750 5400
+Text Label 3050 5300 0    50   ~ 0
+LIMITL1
+Text Label 3050 5400 0    50   ~ 0
+LIMITR1
+Text Label 6950 4950 0    50   ~ 0
+SCLK
+Wire Wire Line
+	6950 4950 7650 4950
+Wire Wire Line
+	6950 5150 7650 5150
+Text Label 6950 5150 0    50   ~ 0
+MOTOR_SELECT
+Text Label 5050 4950 0    50   ~ 0
+SCLK
+Wire Wire Line
+	5050 4950 5750 4950
+Wire Wire Line
+	5050 5150 5750 5150
+Text Label 5050 5150 0    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	4500 5050 4750 5050
+Wire Wire Line
+	7650 5300 6950 5300
+Wire Wire Line
+	6950 5400 7650 5400
+Text Label 6950 5300 0    50   ~ 0
+LIMITL3
+Text Label 6950 5400 0    50   ~ 0
+LIMITR3
+Wire Wire Line
+	5750 5300 5050 5300
+Wire Wire Line
+	5050 5400 5750 5400
+Text Label 5050 5300 0    50   ~ 0
+LIMITL4
+Text Label 5050 5400 0    50   ~ 0
+LIMITR4
+Text Label 8900 4950 0    50   ~ 0
+SCLK
+Wire Wire Line
+	8900 4950 9600 4950
+Wire Wire Line
+	8900 5150 9600 5150
+Text Label 8900 5150 0    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	6500 5050 6700 5050
+Wire Wire Line
+	9600 5300 8900 5300
+Wire Wire Line
+	8900 5400 9600 5400
+Text Label 8900 5300 0    50   ~ 0
+LIMITL2
+Text Label 8900 5400 0    50   ~ 0
+LIMITR2
+Wire Wire Line
+	8400 5050 8650 5050
+$Sheet
+S 3750 4750 750  700 
+U 608D59AB
+F0 "motorU9" 50
+F1 "motor.sch" 50
+F2 "SCK" I L 3750 4950 50 
+F3 "MOSI" I L 3750 5050 50 
+F4 "CS" I L 3750 5150 50 
+F5 "MISO" O R 4500 5050 50 
+F6 "LIMITL" I L 3750 5300 50 
+F7 "LIMITR" I L 3750 5400 50 
+$EndSheet
+$Sheet
+S 5750 4750 750  700 
+U 622D282F
+F0 "motorU10" 50
+F1 "motor.sch" 50
+F2 "SCK" I L 5750 4950 50 
+F3 "MOSI" I L 5750 5050 50 
+F4 "CS" I L 5750 5150 50 
+F5 "MISO" O R 6500 5050 50 
+F6 "LIMITL" I L 5750 5300 50 
+F7 "LIMITR" I L 5750 5400 50 
+$EndSheet
+$Sheet
+S 7650 4750 750  700 
+U 622CD7B8
+F0 "motorU11" 50
+F1 "motor.sch" 50
+F2 "SCK" I L 7650 4950 50 
+F3 "MOSI" I L 7650 5050 50 
+F4 "CS" I L 7650 5150 50 
+F5 "MISO" O R 8400 5050 50 
+F6 "LIMITL" I L 7650 5300 50 
+F7 "LIMITR" I L 7650 5400 50 
+$EndSheet
+$Sheet
+S 9600 4750 750  700 
+U 608CE0EC
+F0 "motorU12" 50
+F1 "motor.sch" 50
+F2 "SCK" I L 9600 4950 50 
+F3 "MOSI" I L 9600 5050 50 
+F4 "CS" I L 9600 5150 50 
+F5 "MISO" O R 10350 5050 50 
+F6 "LIMITL" I L 9600 5300 50 
+F7 "LIMITR" I L 9600 5400 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J5
+U 1 1 60A838CC
+P 9700 2400
+F 0 "J5" H 9750 2917 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 9750 2826 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 9700 2400 50  0001 C CNN
+F 3 "~" H 9700 2400 50  0001 C CNN
+	1    9700 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 2700 10000 2800
+Wire Wire Line
+	10000 2700 10000 2600
+Connection ~ 10000 2700
+Wire Wire Line
+	10000 2600 10000 2500
+Connection ~ 10000 2600
+Wire Wire Line
+	10000 2500 10000 2400
+Connection ~ 10000 2500
+Wire Wire Line
+	10000 2400 10000 2300
+Connection ~ 10000 2400
+Wire Wire Line
+	10000 2100 10000 2200
+Connection ~ 10000 2300
+Connection ~ 10000 2200
+Wire Wire Line
+	10000 2200 10000 2300
+$Comp
+L power:VS #PWR0177
+U 1 1 60CC3944
+P 8350 1900
+F 0 "#PWR0177" H 8150 1750 50  0001 C CNN
+F 1 "VS" H 8365 2073 50  0000 C CNN
+F 2 "" H 8350 1900 50  0001 C CNN
+F 3 "" H 8350 1900 50  0001 C CNN
+	1    8350 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP11
+U 1 1 60A3B16F
+P 8650 5050
+F 0 "TP11" H 8708 5168 50  0000 L CNN
+F 1 "TestPoint" H 8708 5077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 8850 5050 50  0001 C CNN
+F 3 "~" H 8850 5050 50  0001 C CNN
+	1    8650 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 8650 5050
+Wire Wire Line
+	8650 5050 9600 5050
+$Comp
+L Connector:TestPoint TP10
+U 1 1 60A3B281
+P 6700 5050
+F 0 "TP10" H 6758 5168 50  0000 L CNN
+F 1 "TestPoint" H 6758 5077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6900 5050 50  0001 C CNN
+F 3 "~" H 6900 5050 50  0001 C CNN
+	1    6700 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 6700 5050
+Wire Wire Line
+	6700 5050 7650 5050
+$Comp
+L Connector:TestPoint TP9
+U 1 1 60A3B3EC
+P 4750 5050
+F 0 "TP9" H 4808 5168 50  0000 L CNN
+F 1 "TestPoint" H 4808 5077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4950 5050 50  0001 C CNN
+F 3 "~" H 4950 5050 50  0001 C CNN
+	1    4750 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 5050
+Wire Wire Line
+	4750 5050 5750 5050
+$Comp
+L Connector:TestPoint TP8
+U 1 1 60A3B595
+P 2700 5050
+F 0 "TP8" H 2758 5168 50  0000 L CNN
+F 1 "TestPoint" H 2758 5077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 2900 5050 50  0001 C CNN
+F 3 "~" H 2900 5050 50  0001 C CNN
+	1    2700 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 2700 5050
+Wire Wire Line
+	2700 5050 3750 5050
+$Comp
+L power:GND #PWR0189
+U 1 1 607868DF
+P 10000 2300
+F 0 "#PWR0189" H 10000 2050 50  0001 C CNN
+F 1 "GND" V 10005 2172 50  0000 R CNN
+F 2 "" H 10000 2300 50  0001 C CNN
+F 3 "" H 10000 2300 50  0001 C CNN
+	1    10000 2300
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

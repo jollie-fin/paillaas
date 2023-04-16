@@ -1,0 +1,343 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega4809-A U?
+U 1 1 6082A514
+P 8050 2900
+F 0 "U?" H 7800 1500 50  0000 C CNN
+F 1 "ATmega4809-A" H 7650 1400 50  0000 C CNN
+F 2 "Package_QFP:TQFP-48_7x7mm_P0.5mm" H 8050 2900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40002016A.pdf" H 8050 2900 50  0001 C CNN
+	1    8050 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_USB:FT230XQ U?
+U 1 1 6082CD9A
+P 3100 2650
+F 0 "U?" H 3100 3531 50  0000 C CNN
+F 1 "FT230XQ" H 3100 3440 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm" H 4450 2050 50  0001 C CNN
+F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf" H 3100 2650 50  0001 C CNN
+	1    3100 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 1700 9200 1700
+Text Label 9200 1700 2    50   ~ 0
+TxD
+Wire Wire Line
+	8650 1800 9200 1800
+Text Label 9200 1800 2    50   ~ 0
+RxD
+$Comp
+L Device:R R?
+U 1 1 60830B3B
+P 5450 950
+F 0 "R?" H 5520 996 50  0000 L CNN
+F 1 "R" H 5520 905 50  0000 L CNN
+F 2 "" V 5380 950 50  0001 C CNN
+F 3 "~" H 5450 950 50  0001 C CNN
+	1    5450 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1100 5450 1100
+Connection ~ 5450 1100
+Wire Wire Line
+	5450 1100 6000 1100
+Wire Wire Line
+	5200 800  5450 800 
+Text Label 5200 800  0    50   ~ 0
+RxD
+Text Label 5200 1100 0    50   ~ 0
+TxD
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 6083359E
+P 6200 1100
+F 0 "J?" H 6280 1092 50  0000 L CNN
+F 1 "Conn_01x02" H 6280 1001 50  0000 L CNN
+F 2 "" H 6200 1100 50  0001 C CNN
+F 3 "~" H 6200 1100 50  0001 C CNN
+	1    6200 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1200 5800 1200
+Text Label 5800 1200 0    50   ~ 0
+UPDI
+Wire Wire Line
+	7450 1700 7100 1700
+Text Label 7100 1700 0    50   ~ 0
+UPDI
+Wire Wire Line
+	7450 2500 6850 2500
+Text Label 6850 2500 0    50   ~ 0
+RESET
+$Comp
+L Logic_LevelTranslator:SN74LVC1T45DBV U?
+U 1 1 60839DD8
+P 5050 2100
+F 0 "U?" H 5494 2146 50  0000 L CNN
+F 1 "SN74LVC1T45DBV" H 5494 2055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5050 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 4150 1450 50  0001 C CNN
+	1    5050 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic_LevelTranslator:SN74LVC1T45DBV U?
+U 1 1 60846A5E
+P 5050 3400
+F 0 "U?" H 5494 3446 50  0000 L CNN
+F 1 "SN74LVC1T45DBV" H 5494 3355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5050 2950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 4150 2750 50  0001 C CNN
+	1    5050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60851DFC
+P 4950 1700
+F 0 "#PWR?" H 4950 1550 50  0001 C CNN
+F 1 "+3V3" H 4965 1873 50  0000 C CNN
+F 2 "" H 4950 1700 50  0001 C CNN
+F 3 "" H 4950 1700 50  0001 C CNN
+	1    4950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 608521AF
+P 5150 1700
+F 0 "#PWR?" H 5150 1550 50  0001 C CNN
+F 1 "+5V" H 5165 1873 50  0000 C CNN
+F 2 "" H 5150 1700 50  0001 C CNN
+F 3 "" H 5150 1700 50  0001 C CNN
+	1    5150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60852395
+P 5150 3000
+F 0 "#PWR?" H 5150 2850 50  0001 C CNN
+F 1 "+5V" H 5165 3173 50  0000 C CNN
+F 2 "" H 5150 3000 50  0001 C CNN
+F 3 "" H 5150 3000 50  0001 C CNN
+	1    5150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60852CB2
+P 4950 3000
+F 0 "#PWR?" H 4950 2850 50  0001 C CNN
+F 1 "+3V3" H 4965 3173 50  0000 C CNN
+F 2 "" H 4950 3000 50  0001 C CNN
+F 3 "" H 4950 3000 50  0001 C CNN
+	1    4950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60853834
+P 5050 3800
+F 0 "#PWR?" H 5050 3550 50  0001 C CNN
+F 1 "GND" H 5055 3627 50  0000 C CNN
+F 2 "" H 5050 3800 50  0001 C CNN
+F 3 "" H 5050 3800 50  0001 C CNN
+	1    5050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608547D5
+P 5050 2500
+F 0 "#PWR?" H 5050 2250 50  0001 C CNN
+F 1 "GND" H 5055 2327 50  0000 C CNN
+F 2 "" H 5050 2500 50  0001 C CNN
+F 3 "" H 5050 2500 50  0001 C CNN
+	1    5050 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2100 6200 2100
+Text Label 6200 2100 2    50   ~ 0
+RxD
+Wire Wire Line
+	5450 3400 6200 3400
+Text Label 6200 3400 2    50   ~ 0
+TxD
+$Comp
+L power:+5V #PWR?
+U 1 1 60861342
+P 4450 1900
+F 0 "#PWR?" H 4450 1750 50  0001 C CNN
+F 1 "+5V" H 4465 2073 50  0000 C CNN
+F 2 "" H 4450 1900 50  0001 C CNN
+F 3 "" H 4450 1900 50  0001 C CNN
+	1    4450 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1900 4450 2300
+Wire Wire Line
+	4450 2300 4650 2300
+$Comp
+L power:GND #PWR?
+U 1 1 608627C5
+P 4650 3800
+F 0 "#PWR?" H 4650 3550 50  0001 C CNN
+F 1 "GND" H 4655 3627 50  0000 C CNN
+F 2 "" H 4650 3800 50  0001 C CNN
+F 3 "" H 4650 3800 50  0001 C CNN
+	1    4650 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3800 4650 3600
+Wire Wire Line
+	4000 2450 3800 2450
+Wire Wire Line
+	3800 2350 4100 2350
+Wire Wire Line
+	4100 2350 4100 3400
+Wire Wire Line
+	4100 3400 4650 3400
+Wire Wire Line
+	4650 2100 4100 2100
+Wire Wire Line
+	4100 2100 4100 2250
+Wire Wire Line
+	4100 2250 3800 2250
+Text Label 6200 4900 0    50   ~ 0
+RESET
+Wire Wire Line
+	5450 4900 6200 4900
+Wire Wire Line
+	4000 4900 4000 2450
+Wire Wire Line
+	4650 4900 4000 4900
+Wire Wire Line
+	4650 5100 4450 5100
+Wire Wire Line
+	4450 4700 4450 5100
+$Comp
+L power:+5V #PWR?
+U 1 1 60864660
+P 4450 4700
+F 0 "#PWR?" H 4450 4550 50  0001 C CNN
+F 1 "+5V" H 4465 4873 50  0000 C CNN
+F 2 "" H 4450 4700 50  0001 C CNN
+F 3 "" H 4450 4700 50  0001 C CNN
+	1    4450 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60853DA7
+P 5050 5300
+F 0 "#PWR?" H 5050 5050 50  0001 C CNN
+F 1 "GND" H 5055 5127 50  0000 C CNN
+F 2 "" H 5050 5300 50  0001 C CNN
+F 3 "" H 5050 5300 50  0001 C CNN
+	1    5050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 608533C3
+P 5150 4500
+F 0 "#PWR?" H 5150 4350 50  0001 C CNN
+F 1 "+5V" H 5165 4673 50  0000 C CNN
+F 2 "" H 5150 4500 50  0001 C CNN
+F 3 "" H 5150 4500 50  0001 C CNN
+	1    5150 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60849596
+P 4950 4500
+F 0 "#PWR?" H 4950 4350 50  0001 C CNN
+F 1 "+3V3" H 4965 4673 50  0000 C CNN
+F 2 "" H 4950 4500 50  0001 C CNN
+F 3 "" H 4950 4500 50  0001 C CNN
+	1    4950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic_LevelTranslator:SN74LVC1T45DBV U?
+U 1 1 608488E3
+P 5050 4900
+F 0 "U?" H 5494 4946 50  0000 L CNN
+F 1 "SN74LVC1T45DBV" H 5494 4855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5050 4450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 4150 4250 50  0001 C CNN
+	1    5050 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60891982
+P 8050 1500
+F 0 "#PWR?" H 8050 1350 50  0001 C CNN
+F 1 "+5V" H 8065 1673 50  0000 C CNN
+F 2 "" H 8050 1500 50  0001 C CNN
+F 3 "" H 8050 1500 50  0001 C CNN
+	1    8050 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1500 8150 1500
+Connection ~ 8050 1500
+$Comp
+L power:GND #PWR?
+U 1 1 60894241
+P 8050 4300
+F 0 "#PWR?" H 8050 4050 50  0001 C CNN
+F 1 "GND" H 8055 4127 50  0000 C CNN
+F 2 "" H 8050 4300 50  0001 C CNN
+F 3 "" H 8050 4300 50  0001 C CNN
+	1    8050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 60897381
+P 9250 3500
+F 0 "RN?" V 8833 3500 50  0000 C CNN
+F 1 "4x510" V 8924 3500 50  0000 C CNN
+F 2 "" V 9525 3500 50  0001 C CNN
+F 3 "~" H 9250 3500 50  0001 C CNN
+	1    9250 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 60899EB2
+P 9250 4150
+F 0 "RN?" V 8833 4150 50  0000 C CNN
+F 1 "4x510" V 8924 4150 50  0000 C CNN
+F 2 "" V 9525 4150 50  0001 C CNN
+F 3 "~" H 9250 4150 50  0001 C CNN
+	1    9250 4150
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

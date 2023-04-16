@@ -1,0 +1,316 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 14
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	10150 1200 9300 1200
+Wire Wire Line
+	10150 1100 9300 1100
+Text Label 10150 1100 2    50   ~ 0
+MOSI
+Text Label 10150 1200 2    50   ~ 0
+SCLK
+Wire Wire Line
+	10150 1400 9300 1400
+Wire Wire Line
+	10150 1300 9300 1300
+Text Label 10150 1300 2    50   ~ 0
+MISO
+Text Label 10150 1400 2    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	10150 1500 9300 1500
+Text Label 10150 1500 2    50   ~ 0
+POWER_SELECT
+Text HLabel 9300 1100 0    50   Input ~ 0
+MOSI
+Text HLabel 9300 1200 0    50   Input ~ 0
+SCLK
+Text HLabel 9300 1400 0    50   Input ~ 0
+MOTOR_SELECT
+Text HLabel 9300 1500 0    50   Input ~ 0
+POWER_SELECT
+Text HLabel 9300 1300 0    50   Output ~ 0
+MISO
+Text Label 2050 4750 0    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	2050 4750 2650 4750
+Wire Wire Line
+	2050 4550 2650 4550
+Text Label 2050 4550 0    50   ~ 0
+SCLK
+Wire Wire Line
+	10550 4650 10850 4650
+Text Label 10850 4650 2    50   ~ 0
+MISO
+$Sheet
+S 2650 4350 800  1550
+U 61FF8CD2
+F0 "motorU8" 50
+F1 "motor.sch" 50
+F2 "SCK" I L 2650 4550 50 
+F3 "MOSI" I L 2650 4650 50 
+F4 "CS" I L 2650 4750 50 
+F5 "MISO" O R 3450 4650 50 
+$EndSheet
+Wire Wire Line
+	1800 4650 2650 4650
+Text Label 3700 4750 0    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	3700 4750 4300 4750
+Wire Wire Line
+	3700 4550 4300 4550
+Text Label 3700 4550 0    50   ~ 0
+SCLK
+$Sheet
+S 4300 4350 800  1550
+U 607D51FA
+F0 "motorU9" 50
+F1 "motor.sch" 50
+F2 "SCK" I L 4300 4550 50 
+F3 "MOSI" I L 4300 4650 50 
+F4 "CS" I L 4300 4750 50 
+F5 "MISO" O R 5100 4650 50 
+$EndSheet
+Wire Wire Line
+	3450 4650 4300 4650
+Text Label 5350 4750 0    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	5350 4750 5950 4750
+Wire Wire Line
+	5350 4550 5950 4550
+Text Label 5350 4550 0    50   ~ 0
+SCLK
+$Sheet
+S 5950 4350 800  1550
+U 607D8739
+F0 "motorU10" 50
+F1 "motor.sch" 50
+F2 "SCK" I L 5950 4550 50 
+F3 "MOSI" I L 5950 4650 50 
+F4 "CS" I L 5950 4750 50 
+F5 "MISO" O R 6750 4650 50 
+$EndSheet
+Wire Wire Line
+	5100 4650 5950 4650
+Text Label 7000 4750 0    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	7000 4750 7600 4750
+Wire Wire Line
+	7000 4550 7600 4550
+Text Label 7000 4550 0    50   ~ 0
+SCLK
+$Sheet
+S 7600 4350 800  1550
+U 607DCB26
+F0 "motorU11" 50
+F1 "motor.sch" 50
+F2 "SCK" I L 7600 4550 50 
+F3 "MOSI" I L 7600 4650 50 
+F4 "CS" I L 7600 4750 50 
+F5 "MISO" O R 8400 4650 50 
+$EndSheet
+Wire Wire Line
+	6750 4650 7600 4650
+Text Label 8650 4750 0    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	8650 4750 9250 4750
+Wire Wire Line
+	8650 4550 9250 4550
+Text Label 8650 4550 0    50   ~ 0
+SCLK
+$Sheet
+S 9250 4350 800  1550
+U 607E21DA
+F0 "motorU12" 50
+F1 "motor.sch" 50
+F2 "SCK" I L 9250 4550 50 
+F3 "MOSI" I L 9250 4650 50 
+F4 "CS" I L 9250 4750 50 
+F5 "MISO" O R 10050 4650 50 
+$EndSheet
+Wire Wire Line
+	8400 4650 9250 4650
+Text Label 1800 4650 2    50   ~ 0
+MOSI
+$Comp
+L power:GND #PWR?
+U 1 1 62388281
+P 9650 3150
+AR Path="/607C3564/622CD7B8/62388281" Ref="#PWR?"  Part="1" 
+AR Path="/607C3564/61FF8CD2/62388281" Ref="#PWR?"  Part="1" 
+AR Path="/607C3564/622D282F/62388281" Ref="#PWR?"  Part="1" 
+AR Path="/607C3564/608CE0EC/62388281" Ref="#PWR?"  Part="1" 
+AR Path="/607C3564/608D59AB/62388281" Ref="#PWR?"  Part="1" 
+AR Path="/607C3564/6087316A/62388281" Ref="#PWR?"  Part="1" 
+AR Path="/60A4EFB9/62388281" Ref="#PWR?"  Part="1" 
+AR Path="/607C3564/62388281" Ref="#PWR0183"  Part="1" 
+F 0 "#PWR0183" H 9650 2900 50  0001 C CNN
+F 1 "GND" H 9655 2977 50  0000 C CNN
+F 2 "" H 9650 3150 50  0001 C CNN
+F 3 "" H 9650 3150 50  0001 C CNN
+	1    9650 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 3150 9650 3050
+Connection ~ 9650 3050
+$Comp
+L Device:CP C?
+U 1 1 62388289
+P 9150 2900
+AR Path="/607C3564/622CD7B8/62388289" Ref="C?"  Part="1" 
+AR Path="/607C3564/61FF8CD2/62388289" Ref="C?"  Part="1" 
+AR Path="/607C3564/622D282F/62388289" Ref="C?"  Part="1" 
+AR Path="/607C3564/608CE0EC/62388289" Ref="C?"  Part="1" 
+AR Path="/607C3564/608D59AB/62388289" Ref="C?"  Part="1" 
+AR Path="/607C3564/6087316A/62388289" Ref="C?"  Part="1" 
+AR Path="/60A4EFB9/62388289" Ref="C?"  Part="1" 
+AR Path="/607C3564/62388289" Ref="C59"  Part="1" 
+F 0 "C59" H 9268 2946 50  0000 L CNN
+F 1 "100u" H 9268 2855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 9188 2750 50  0001 C CNN
+F 3 "~" H 9150 2900 50  0001 C CNN
+	1    9150 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 2750 9650 2750
+$Comp
+L Device:CP C?
+U 1 1 62388290
+P 10100 2900
+AR Path="/607C3564/622CD7B8/62388290" Ref="C?"  Part="1" 
+AR Path="/607C3564/61FF8CD2/62388290" Ref="C?"  Part="1" 
+AR Path="/607C3564/622D282F/62388290" Ref="C?"  Part="1" 
+AR Path="/607C3564/608CE0EC/62388290" Ref="C?"  Part="1" 
+AR Path="/607C3564/608D59AB/62388290" Ref="C?"  Part="1" 
+AR Path="/607C3564/6087316A/62388290" Ref="C?"  Part="1" 
+AR Path="/60A4EFB9/62388290" Ref="C?"  Part="1" 
+AR Path="/607C3564/62388290" Ref="C80"  Part="1" 
+F 0 "C80" H 10218 2946 50  0000 L CNN
+F 1 "100u" H 10218 2855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 10138 2750 50  0001 C CNN
+F 3 "~" H 10100 2900 50  0001 C CNN
+	1    10100 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 62388296
+P 9650 2900
+AR Path="/607C3564/622CD7B8/62388296" Ref="C?"  Part="1" 
+AR Path="/607C3564/61FF8CD2/62388296" Ref="C?"  Part="1" 
+AR Path="/607C3564/622D282F/62388296" Ref="C?"  Part="1" 
+AR Path="/607C3564/608CE0EC/62388296" Ref="C?"  Part="1" 
+AR Path="/607C3564/608D59AB/62388296" Ref="C?"  Part="1" 
+AR Path="/607C3564/6087316A/62388296" Ref="C?"  Part="1" 
+AR Path="/60A4EFB9/62388296" Ref="C?"  Part="1" 
+AR Path="/607C3564/62388296" Ref="C60"  Part="1" 
+F 0 "C60" H 9768 2946 50  0000 L CNN
+F 1 "100u" H 9768 2855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 9688 2750 50  0001 C CNN
+F 3 "~" H 9650 2900 50  0001 C CNN
+	1    9650 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 3050 9650 3050
+Wire Wire Line
+	9650 2750 10100 2750
+Connection ~ 9650 2750
+$Comp
+L Device:CP C?
+U 1 1 6238829F
+P 10550 2900
+AR Path="/607C3564/622CD7B8/6238829F" Ref="C?"  Part="1" 
+AR Path="/607C3564/61FF8CD2/6238829F" Ref="C?"  Part="1" 
+AR Path="/607C3564/622D282F/6238829F" Ref="C?"  Part="1" 
+AR Path="/607C3564/608CE0EC/6238829F" Ref="C?"  Part="1" 
+AR Path="/607C3564/608D59AB/6238829F" Ref="C?"  Part="1" 
+AR Path="/607C3564/6087316A/6238829F" Ref="C?"  Part="1" 
+AR Path="/60A4EFB9/6238829F" Ref="C?"  Part="1" 
+AR Path="/607C3564/6238829F" Ref="C81"  Part="1" 
+F 0 "C81" H 10668 2946 50  0000 L CNN
+F 1 "100u" H 10668 2855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 10588 2750 50  0001 C CNN
+F 3 "~" H 10550 2900 50  0001 C CNN
+	1    10550 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 3050 10100 3050
+Wire Wire Line
+	10100 2750 10550 2750
+$Comp
+L power:+12V #PWR?
+U 1 1 623882A7
+P 9650 2750
+AR Path="/60A4EFB9/623882A7" Ref="#PWR?"  Part="1" 
+AR Path="/607C3564/623882A7" Ref="#PWR0190"  Part="1" 
+F 0 "#PWR0190" H 9650 2600 50  0001 C CNN
+F 1 "+12V" H 9665 2923 50  0000 C CNN
+F 2 "" H 9650 2750 50  0001 C CNN
+F 3 "" H 9650 2750 50  0001 C CNN
+	1    9650 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 10100 2750
+Connection ~ 10100 3050
+Wire Notes Line
+	8100 3750 8100 500 
+Wire Wire Line
+	9400 3050 9650 3050
+Wire Wire Line
+	9150 3050 9650 3050
+Wire Notes Line
+	450  3750 11250 3750
+Wire Notes Line
+	8100 2100 11150 2100
+Text Notes 9450 3950 0    79   ~ 0
+Stepper motor drivers
+Text Notes 9650 2350 0    79   ~ 0
+Global decoupling
+Text Notes 9850 700  0    79   ~ 0
+Imported signals
+Wire Notes Line
+	4250 3750 4250 500 
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 61681AB1
+P 10350 4550
+AR Path="/607C3564/607D51FA/61681AB1" Ref="RN?"  Part="1" 
+AR Path="/607C3517/61681AB1" Ref="RN?"  Part="1" 
+AR Path="/607C3564/61681AB1" Ref="RN20"  Part="1" 
+F 0 "RN20" V 9933 4550 50  0000 C CNN
+F 1 "4x39" V 10024 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0402" V 10625 4550 50  0001 C CNN
+F 3 "~" H 10350 4550 50  0001 C CNN
+	1    10350 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10150 4650 10050 4650
+NoConn ~ 10550 4550
+NoConn ~ 10550 4450
+NoConn ~ 10550 4350
+NoConn ~ 10150 4350
+NoConn ~ 10150 4450
+NoConn ~ 10150 4550
+$EndSCHEMATC

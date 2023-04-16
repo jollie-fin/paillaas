@@ -1,0 +1,933 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	10150 1200 9300 1200
+Wire Wire Line
+	10150 1100 9300 1100
+Text Label 10150 1100 2    50   ~ 0
+MOSI
+Text Label 10150 1200 2    50   ~ 0
+SCLK
+Wire Wire Line
+	10150 1400 9300 1400
+Wire Wire Line
+	10150 1300 9300 1300
+Text Label 10150 1300 2    50   ~ 0
+MISO
+Text Label 10150 1400 2    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	10150 1500 9300 1500
+Text Label 10150 1500 2    50   ~ 0
+POWER_SELECT
+Text HLabel 9300 1100 0    50   Input ~ 0
+MOSI
+Text HLabel 9300 1200 0    50   Input ~ 0
+SCLK
+Text HLabel 9300 1400 0    50   Input ~ 0
+MOTOR_SELECT
+Text HLabel 9300 1500 0    50   Input ~ 0
+POWER_SELECT
+Text HLabel 9300 1300 0    50   Output ~ 0
+MISO
+Text Label 2050 4750 0    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	2050 4750 2650 4750
+Wire Wire Line
+	2050 4550 2650 4550
+Text Label 2050 4550 0    50   ~ 0
+SCLK
+Wire Wire Line
+	10350 4650 10650 4650
+Text Label 10650 4650 2    50   ~ 0
+MISO
+$Sheet
+S 2650 4350 800  1550
+U 61FF8CD2
+F0 "motorU8" 50
+F1 "motor.sch" 50
+F2 "SCK" I L 2650 4550 50 
+F3 "MOSI" I L 2650 4650 50 
+F4 "CS" I L 2650 4750 50 
+F5 "MISO" O R 3450 4650 50 
+F6 "ENCA" I L 2650 5050 50 
+F7 "ENCB" I L 2650 5150 50 
+F8 "ENCN" I L 2650 5250 50 
+F9 "LIMITL" I L 2650 5350 50 
+F10 "LIMITR" I L 2650 5450 50 
+F11 "MOT_A2" O R 3450 5050 50 
+F12 "MOT_B2" O R 3450 5300 50 
+F13 "MOT_A1" O R 3450 4950 50 
+F14 "MOT_B1" O R 3450 5200 50 
+$EndSheet
+$Comp
+L Device:R R?
+U 1 1 608AC9F4
+P 10200 4650
+AR Path="/607C3517/608AC9F4" Ref="R?"  Part="1" 
+AR Path="/607C3564/608AC9F4" Ref="R42"  Part="1" 
+F 0 "R42" V 10100 4700 50  0000 C CNN
+F 1 "39" V 10200 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10130 4650 50  0001 C CNN
+F 3 "~" H 10200 4650 50  0001 C CNN
+	1    10200 4650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1800 4650 2650 4650
+Wire Wire Line
+	3450 4950 3550 4950
+Wire Wire Line
+	3450 5050 3550 5050
+Wire Wire Line
+	3450 5200 3550 5200
+Wire Wire Line
+	3450 5300 3550 5300
+Text Label 3550 4950 0    50   ~ 0
+8A1
+Text Label 3550 5050 0    50   ~ 0
+8A2
+Text Label 3550 5200 0    50   ~ 0
+8B1
+Text Label 3550 5300 0    50   ~ 0
+8B2
+Wire Wire Line
+	2650 5050 2500 5050
+Text Label 2500 5050 2    50   ~ 0
+8ENCA
+Wire Wire Line
+	2650 5150 2500 5150
+Text Label 2500 5150 2    50   ~ 0
+8ENCB
+Wire Wire Line
+	2650 5250 2500 5250
+Text Label 2500 5250 2    50   ~ 0
+8ENCN
+Wire Wire Line
+	2650 5350 2500 5350
+Text Label 2500 5350 2    50   ~ 0
+8LIML
+Wire Wire Line
+	2650 5450 2500 5450
+Text Label 2500 5450 2    50   ~ 0
+8LIMR
+Text Label 3700 4750 0    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	3700 4750 4300 4750
+Wire Wire Line
+	3700 4550 4300 4550
+Text Label 3700 4550 0    50   ~ 0
+SCLK
+$Sheet
+S 4300 4350 800  1550
+U 607D51FA
+F0 "motorU9" 50
+F1 "motor.sch" 50
+F2 "SCK" I L 4300 4550 50 
+F3 "MOSI" I L 4300 4650 50 
+F4 "CS" I L 4300 4750 50 
+F5 "MISO" O R 5100 4650 50 
+F6 "ENCA" I L 4300 5050 50 
+F7 "ENCB" I L 4300 5150 50 
+F8 "ENCN" I L 4300 5250 50 
+F9 "LIMITL" I L 4300 5350 50 
+F10 "LIMITR" I L 4300 5450 50 
+F11 "MOT_A2" O R 5100 5050 50 
+F12 "MOT_B2" O R 5100 5300 50 
+F13 "MOT_A1" O R 5100 4950 50 
+F14 "MOT_B1" O R 5100 5200 50 
+$EndSheet
+Wire Wire Line
+	3450 4650 4300 4650
+Wire Wire Line
+	5100 4950 5200 4950
+Wire Wire Line
+	5100 5050 5200 5050
+Wire Wire Line
+	5100 5200 5200 5200
+Wire Wire Line
+	5100 5300 5200 5300
+Text Label 5200 4950 0    50   ~ 0
+9A1
+Text Label 5200 5050 0    50   ~ 0
+9A2
+Text Label 5200 5200 0    50   ~ 0
+9B1
+Text Label 5200 5300 0    50   ~ 0
+9B2
+Wire Wire Line
+	4300 5050 4150 5050
+Text Label 4150 5050 2    50   ~ 0
+9ENCA
+Wire Wire Line
+	4300 5150 4150 5150
+Text Label 4150 5150 2    50   ~ 0
+9ENCB
+Wire Wire Line
+	4300 5250 4150 5250
+Text Label 4150 5250 2    50   ~ 0
+9ENCN
+Wire Wire Line
+	4300 5350 4150 5350
+Text Label 4150 5350 2    50   ~ 0
+9LIML
+Wire Wire Line
+	4300 5450 4150 5450
+Text Label 4150 5450 2    50   ~ 0
+9LIMR
+Text Label 5350 4750 0    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	5350 4750 5950 4750
+Wire Wire Line
+	5350 4550 5950 4550
+Text Label 5350 4550 0    50   ~ 0
+SCLK
+$Sheet
+S 5950 4350 800  1550
+U 607D8739
+F0 "motorU10" 50
+F1 "motor.sch" 50
+F2 "SCK" I L 5950 4550 50 
+F3 "MOSI" I L 5950 4650 50 
+F4 "CS" I L 5950 4750 50 
+F5 "MISO" O R 6750 4650 50 
+F6 "ENCA" I L 5950 5050 50 
+F7 "ENCB" I L 5950 5150 50 
+F8 "ENCN" I L 5950 5250 50 
+F9 "LIMITL" I L 5950 5350 50 
+F10 "LIMITR" I L 5950 5450 50 
+F11 "MOT_A2" O R 6750 5050 50 
+F12 "MOT_B2" O R 6750 5300 50 
+F13 "MOT_A1" O R 6750 4950 50 
+F14 "MOT_B1" O R 6750 5200 50 
+$EndSheet
+Wire Wire Line
+	5100 4650 5950 4650
+Wire Wire Line
+	6750 4950 6850 4950
+Wire Wire Line
+	6750 5050 6850 5050
+Wire Wire Line
+	6750 5200 6850 5200
+Wire Wire Line
+	6750 5300 6850 5300
+Text Label 6850 4950 0    50   ~ 0
+10A1
+Text Label 6850 5050 0    50   ~ 0
+10A2
+Text Label 6850 5200 0    50   ~ 0
+10B1
+Text Label 6850 5300 0    50   ~ 0
+10B2
+Wire Wire Line
+	5950 5050 5800 5050
+Text Label 5800 5050 2    50   ~ 0
+10ENCA
+Wire Wire Line
+	5950 5150 5800 5150
+Text Label 5800 5150 2    50   ~ 0
+10ENCB
+Wire Wire Line
+	5950 5250 5800 5250
+Text Label 5800 5250 2    50   ~ 0
+10ENCN
+Wire Wire Line
+	5950 5350 5800 5350
+Text Label 5800 5350 2    50   ~ 0
+10LIML
+Wire Wire Line
+	5950 5450 5800 5450
+Text Label 5800 5450 2    50   ~ 0
+10LIMR
+Text Label 7000 4750 0    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	7000 4750 7600 4750
+Wire Wire Line
+	7000 4550 7600 4550
+Text Label 7000 4550 0    50   ~ 0
+SCLK
+$Sheet
+S 7600 4350 800  1550
+U 607DCB26
+F0 "motorU11" 50
+F1 "motor.sch" 50
+F2 "SCK" I L 7600 4550 50 
+F3 "MOSI" I L 7600 4650 50 
+F4 "CS" I L 7600 4750 50 
+F5 "MISO" O R 8400 4650 50 
+F6 "ENCA" I L 7600 5050 50 
+F7 "ENCB" I L 7600 5150 50 
+F8 "ENCN" I L 7600 5250 50 
+F9 "LIMITL" I L 7600 5350 50 
+F10 "LIMITR" I L 7600 5450 50 
+F11 "MOT_A2" O R 8400 5050 50 
+F12 "MOT_B2" O R 8400 5300 50 
+F13 "MOT_A1" O R 8400 4950 50 
+F14 "MOT_B1" O R 8400 5200 50 
+$EndSheet
+Wire Wire Line
+	6750 4650 7600 4650
+Wire Wire Line
+	8400 4950 8500 4950
+Wire Wire Line
+	8400 5050 8500 5050
+Wire Wire Line
+	8400 5200 8500 5200
+Wire Wire Line
+	8400 5300 8500 5300
+Text Label 8500 4950 0    50   ~ 0
+11A1
+Text Label 8500 5050 0    50   ~ 0
+11A2
+Text Label 8500 5200 0    50   ~ 0
+11B1
+Text Label 8500 5300 0    50   ~ 0
+11B2
+Wire Wire Line
+	7600 5050 7450 5050
+Text Label 7450 5050 2    50   ~ 0
+11ENCA
+Wire Wire Line
+	7600 5150 7450 5150
+Text Label 7450 5150 2    50   ~ 0
+11ENCB
+Wire Wire Line
+	7600 5250 7450 5250
+Text Label 7450 5250 2    50   ~ 0
+11ENCN
+Wire Wire Line
+	7600 5350 7450 5350
+Text Label 7450 5350 2    50   ~ 0
+11LIML
+Wire Wire Line
+	7600 5450 7450 5450
+Text Label 7450 5450 2    50   ~ 0
+11LIMR
+Text Label 8650 4750 0    50   ~ 0
+MOTOR_SELECT
+Wire Wire Line
+	8650 4750 9250 4750
+Wire Wire Line
+	8650 4550 9250 4550
+Text Label 8650 4550 0    50   ~ 0
+SCLK
+$Sheet
+S 9250 4350 800  1550
+U 607E21DA
+F0 "motorU12" 50
+F1 "motor.sch" 50
+F2 "SCK" I L 9250 4550 50 
+F3 "MOSI" I L 9250 4650 50 
+F4 "CS" I L 9250 4750 50 
+F5 "MISO" O R 10050 4650 50 
+F6 "ENCA" I L 9250 5050 50 
+F7 "ENCB" I L 9250 5150 50 
+F8 "ENCN" I L 9250 5250 50 
+F9 "LIMITL" I L 9250 5350 50 
+F10 "LIMITR" I L 9250 5450 50 
+F11 "MOT_A2" O R 10050 5050 50 
+F12 "MOT_B2" O R 10050 5300 50 
+F13 "MOT_A1" O R 10050 4950 50 
+F14 "MOT_B1" O R 10050 5200 50 
+$EndSheet
+Wire Wire Line
+	8400 4650 9250 4650
+Wire Wire Line
+	10050 4950 10150 4950
+Wire Wire Line
+	10050 5050 10150 5050
+Wire Wire Line
+	10050 5200 10150 5200
+Wire Wire Line
+	10050 5300 10150 5300
+Text Label 10150 4950 0    50   ~ 0
+12A1
+Text Label 10150 5050 0    50   ~ 0
+12A2
+Text Label 10150 5200 0    50   ~ 0
+12B1
+Text Label 10150 5300 0    50   ~ 0
+12B2
+Wire Wire Line
+	9250 5050 9100 5050
+Text Label 9100 5050 2    50   ~ 0
+12ENCA
+Wire Wire Line
+	9250 5150 9100 5150
+Text Label 9100 5150 2    50   ~ 0
+12ENCB
+Wire Wire Line
+	9250 5250 9100 5250
+Text Label 9100 5250 2    50   ~ 0
+12ENCN
+Wire Wire Line
+	9250 5350 9100 5350
+Text Label 9100 5350 2    50   ~ 0
+12LIML
+Wire Wire Line
+	9250 5450 9100 5450
+Text Label 9100 5450 2    50   ~ 0
+12LIMR
+Text Label 1800 4650 2    50   ~ 0
+MOSI
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J8
+U 1 1 60852471
+P 1850 2200
+F 0 "J8" H 1900 3317 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 1900 3226 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical" H 1850 2200 50  0001 C CNN
+F 3 "~" H 1850 2200 50  0001 C CNN
+	1    1850 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1500 1400 1500
+Text Label 1400 1500 2    50   ~ 0
+8A1
+Wire Wire Line
+	2150 1500 2400 1500
+Text Label 2400 1500 0    50   ~ 0
+8A1
+Wire Wire Line
+	1650 1600 1400 1600
+Text Label 1400 1600 2    50   ~ 0
+8A2
+Wire Wire Line
+	2150 1600 2400 1600
+Text Label 2400 1600 0    50   ~ 0
+8A2
+Wire Wire Line
+	1650 1300 1400 1300
+Text Label 1400 1300 2    50   ~ 0
+8B1
+Wire Wire Line
+	2150 1300 2400 1300
+Text Label 2400 1300 0    50   ~ 0
+8B1
+Wire Wire Line
+	1650 1400 1400 1400
+Text Label 1400 1400 2    50   ~ 0
+8B2
+Wire Wire Line
+	2150 1400 2400 1400
+Text Label 2400 1400 0    50   ~ 0
+8B2
+Wire Wire Line
+	1650 1900 1400 1900
+Text Label 1400 1900 2    50   ~ 0
+9A1
+Wire Wire Line
+	2150 1900 2400 1900
+Text Label 2400 1900 0    50   ~ 0
+9A1
+Wire Wire Line
+	1650 2000 1400 2000
+Text Label 1400 2000 2    50   ~ 0
+9A2
+Wire Wire Line
+	2150 2000 2400 2000
+Text Label 2400 2000 0    50   ~ 0
+9A2
+Wire Wire Line
+	1650 1700 1400 1700
+Text Label 1400 1700 2    50   ~ 0
+9B1
+Wire Wire Line
+	2150 1700 2400 1700
+Text Label 2400 1700 0    50   ~ 0
+9B1
+Wire Wire Line
+	1650 1800 1400 1800
+Text Label 1400 1800 2    50   ~ 0
+9B2
+Wire Wire Line
+	2150 1800 2400 1800
+Text Label 2400 1800 0    50   ~ 0
+9B2
+Wire Wire Line
+	1650 2300 1400 2300
+Text Label 1400 2300 2    50   ~ 0
+10A1
+Wire Wire Line
+	2150 2300 2400 2300
+Text Label 2400 2300 0    50   ~ 0
+10A1
+Wire Wire Line
+	1650 2400 1400 2400
+Wire Wire Line
+	2150 2400 2400 2400
+Text Label 2400 2400 0    50   ~ 0
+10A2
+Wire Wire Line
+	1650 2100 1400 2100
+Text Label 1400 2100 2    50   ~ 0
+10B1
+Wire Wire Line
+	2150 2100 2400 2100
+Text Label 2400 2100 0    50   ~ 0
+10B1
+Wire Wire Line
+	1650 2200 1400 2200
+Text Label 1400 2200 2    50   ~ 0
+10B2
+Wire Wire Line
+	2150 2200 2400 2200
+Text Label 2400 2200 0    50   ~ 0
+10B2
+Wire Wire Line
+	1650 2700 1400 2700
+Text Label 1400 2700 2    50   ~ 0
+11A1
+Wire Wire Line
+	2150 2700 2400 2700
+Text Label 2400 2700 0    50   ~ 0
+11A1
+Wire Wire Line
+	1650 2800 1400 2800
+Text Label 1400 2800 2    50   ~ 0
+11A2
+Wire Wire Line
+	2150 2800 2400 2800
+Text Label 2400 2800 0    50   ~ 0
+11A2
+Wire Wire Line
+	1650 2500 1400 2500
+Text Label 1400 2500 2    50   ~ 0
+11B1
+Wire Wire Line
+	2150 2500 2400 2500
+Text Label 2400 2500 0    50   ~ 0
+11B1
+Wire Wire Line
+	1650 2600 1400 2600
+Text Label 1400 2600 2    50   ~ 0
+11B2
+Wire Wire Line
+	2150 2600 2400 2600
+Text Label 2400 2600 0    50   ~ 0
+11B2
+Wire Wire Line
+	1650 3100 1400 3100
+Text Label 1400 3100 2    50   ~ 0
+12A1
+Wire Wire Line
+	2150 3100 2400 3100
+Text Label 2400 3100 0    50   ~ 0
+12A1
+Wire Wire Line
+	1650 3200 1400 3200
+Text Label 1400 3200 2    50   ~ 0
+12A2
+Wire Wire Line
+	2150 3200 2400 3200
+Text Label 2400 3200 0    50   ~ 0
+12A2
+Wire Wire Line
+	1650 2900 1400 2900
+Text Label 1400 2900 2    50   ~ 0
+12B1
+Wire Wire Line
+	2150 2900 2400 2900
+Text Label 2400 2900 0    50   ~ 0
+12B1
+Wire Wire Line
+	1650 3000 1400 3000
+Text Label 1400 3000 2    50   ~ 0
+12B2
+Wire Wire Line
+	2150 3000 2400 3000
+Text Label 2400 3000 0    50   ~ 0
+12B2
+Text Label 1400 2400 2    50   ~ 0
+10A2
+Wire Wire Line
+	6050 3250 5800 3250
+Text Label 5800 3250 2    50   ~ 0
+8LIMR
+Wire Wire Line
+	6050 3150 5800 3150
+Text Label 5800 3150 2    50   ~ 0
+8ENCB
+Wire Wire Line
+	6550 3250 6800 3250
+Text Label 6800 3250 0    50   ~ 0
+8LIML
+Wire Wire Line
+	6550 3150 6800 3150
+Text Label 6800 3150 0    50   ~ 0
+8ENCA
+Wire Wire Line
+	6550 3050 6800 3050
+Text Label 6800 3050 0    50   ~ 0
+8ENCN
+NoConn ~ 6050 3050
+$Comp
+L power:GND #PWR0195
+U 1 1 609AD8CE
+P 6050 2950
+F 0 "#PWR0195" H 6050 2700 50  0001 C CNN
+F 1 "GND" V 6055 2822 50  0000 R CNN
+F 2 "" H 6050 2950 50  0001 C CNN
+F 3 "" H 6050 2950 50  0001 C CNN
+	1    6050 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 2850 5800 2850
+Text Label 5800 2850 2    50   ~ 0
+9LIMR
+Wire Wire Line
+	6050 2750 5800 2750
+Text Label 5800 2750 2    50   ~ 0
+9ENCB
+Wire Wire Line
+	6550 2850 6800 2850
+Text Label 6800 2850 0    50   ~ 0
+9LIML
+Wire Wire Line
+	6550 2750 6800 2750
+Text Label 6800 2750 0    50   ~ 0
+9ENCA
+Wire Wire Line
+	6550 2650 6800 2650
+NoConn ~ 6050 2650
+$Comp
+L power:GND #PWR0197
+U 1 1 609B1A4E
+P 6050 2550
+F 0 "#PWR0197" H 6050 2300 50  0001 C CNN
+F 1 "GND" V 6055 2422 50  0000 R CNN
+F 2 "" H 6050 2550 50  0001 C CNN
+F 3 "" H 6050 2550 50  0001 C CNN
+	1    6050 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 2450 5800 2450
+Text Label 5800 2450 2    50   ~ 0
+10LIMR
+Wire Wire Line
+	6050 2350 5800 2350
+Text Label 5800 2350 2    50   ~ 0
+10ENCB
+Wire Wire Line
+	6550 2450 6800 2450
+Text Label 6800 2450 0    50   ~ 0
+10LIML
+Wire Wire Line
+	6550 2350 6800 2350
+Text Label 6800 2350 0    50   ~ 0
+10ENCA
+Wire Wire Line
+	6550 2250 6800 2250
+Text Label 6800 2250 0    50   ~ 0
+10ENCN
+NoConn ~ 6050 2250
+$Comp
+L power:GND #PWR0199
+U 1 1 609C080D
+P 6050 2150
+F 0 "#PWR0199" H 6050 1900 50  0001 C CNN
+F 1 "GND" V 6055 2022 50  0000 R CNN
+F 2 "" H 6050 2150 50  0001 C CNN
+F 3 "" H 6050 2150 50  0001 C CNN
+	1    6050 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 2050 5800 2050
+Text Label 5800 2050 2    50   ~ 0
+11LIMR
+Wire Wire Line
+	6050 1950 5800 1950
+Text Label 5800 1950 2    50   ~ 0
+11ENCB
+Wire Wire Line
+	6550 2050 6800 2050
+Text Label 6800 2050 0    50   ~ 0
+11LIML
+Wire Wire Line
+	6550 1950 6800 1950
+Text Label 6800 1950 0    50   ~ 0
+11ENCA
+Wire Wire Line
+	6550 1850 6800 1850
+Text Label 6800 1850 0    50   ~ 0
+11ENCN
+NoConn ~ 6050 1850
+$Comp
+L power:GND #PWR0201
+U 1 1 609D0EAF
+P 6050 1750
+F 0 "#PWR0201" H 6050 1500 50  0001 C CNN
+F 1 "GND" V 6055 1622 50  0000 R CNN
+F 2 "" H 6050 1750 50  0001 C CNN
+F 3 "" H 6050 1750 50  0001 C CNN
+	1    6050 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 1650 5800 1650
+Text Label 5800 1650 2    50   ~ 0
+12LIMR
+Wire Wire Line
+	6050 1550 5800 1550
+Text Label 5800 1550 2    50   ~ 0
+12ENCB
+Wire Wire Line
+	6550 1650 6800 1650
+Text Label 6800 1650 0    50   ~ 0
+12LIML
+Wire Wire Line
+	6550 1550 6800 1550
+Text Label 6800 1550 0    50   ~ 0
+12ENCA
+Wire Wire Line
+	6550 1450 6800 1450
+Text Label 6800 1450 0    50   ~ 0
+12ENCN
+NoConn ~ 6050 1450
+$Comp
+L power:GND #PWR0203
+U 1 1 609E1B0F
+P 6050 1350
+F 0 "#PWR0203" H 6050 1100 50  0001 C CNN
+F 1 "GND" V 6055 1222 50  0000 R CNN
+F 2 "" H 6050 1350 50  0001 C CNN
+F 3 "" H 6050 1350 50  0001 C CNN
+	1    6050 1350
+	0    1    1    0   
+$EndComp
+Text Label 6800 2650 0    50   ~ 0
+9ENCN
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J9
+U 1 1 60854D49
+P 6250 2250
+F 0 "J9" H 6300 3367 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 6300 3276 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical" H 6250 2250 50  0001 C CNN
+F 3 "~" H 6250 2250 50  0001 C CNN
+	1    6250 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L library:3V3bus #PWR023
+U 1 1 6131DB3D
+P 6550 2950
+F 0 "#PWR023" H 6550 2800 50  0001 C CNN
+F 1 "3V3bus" V 6565 3078 50  0000 L CNN
+F 2 "" H 6550 2950 50  0001 C CNN
+F 3 "" H 6550 2950 50  0001 C CNN
+	1    6550 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L library:3V3bus #PWR022
+U 1 1 6131EF71
+P 6550 2550
+F 0 "#PWR022" H 6550 2400 50  0001 C CNN
+F 1 "3V3bus" V 6565 2678 50  0000 L CNN
+F 2 "" H 6550 2550 50  0001 C CNN
+F 3 "" H 6550 2550 50  0001 C CNN
+	1    6550 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L library:3V3bus #PWR018
+U 1 1 6131F67E
+P 6550 2150
+F 0 "#PWR018" H 6550 2000 50  0001 C CNN
+F 1 "3V3bus" V 6565 2278 50  0000 L CNN
+F 2 "" H 6550 2150 50  0001 C CNN
+F 3 "" H 6550 2150 50  0001 C CNN
+	1    6550 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L library:3V3bus #PWR017
+U 1 1 6132019A
+P 6550 1750
+F 0 "#PWR017" H 6550 1600 50  0001 C CNN
+F 1 "3V3bus" V 6565 1878 50  0000 L CNN
+F 2 "" H 6550 1750 50  0001 C CNN
+F 3 "" H 6550 1750 50  0001 C CNN
+	1    6550 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L library:3V3bus #PWR016
+U 1 1 613208C8
+P 6550 1350
+F 0 "#PWR016" H 6550 1200 50  0001 C CNN
+F 1 "3V3bus" V 6565 1478 50  0000 L CNN
+F 2 "" H 6550 1350 50  0001 C CNN
+F 3 "" H 6550 1350 50  0001 C CNN
+	1    6550 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62388281
+P 9650 3150
+AR Path="/607C3564/622CD7B8/62388281" Ref="#PWR?"  Part="1" 
+AR Path="/607C3564/61FF8CD2/62388281" Ref="#PWR?"  Part="1" 
+AR Path="/607C3564/622D282F/62388281" Ref="#PWR?"  Part="1" 
+AR Path="/607C3564/608CE0EC/62388281" Ref="#PWR?"  Part="1" 
+AR Path="/607C3564/608D59AB/62388281" Ref="#PWR?"  Part="1" 
+AR Path="/607C3564/6087316A/62388281" Ref="#PWR?"  Part="1" 
+AR Path="/60A4EFB9/62388281" Ref="#PWR?"  Part="1" 
+AR Path="/607C3564/62388281" Ref="#PWR0183"  Part="1" 
+F 0 "#PWR0183" H 9650 2900 50  0001 C CNN
+F 1 "GND" H 9655 2977 50  0000 C CNN
+F 2 "" H 9650 3150 50  0001 C CNN
+F 3 "" H 9650 3150 50  0001 C CNN
+	1    9650 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 3150 9650 3050
+Connection ~ 9650 3050
+$Comp
+L Device:CP C?
+U 1 1 62388289
+P 9150 2900
+AR Path="/607C3564/622CD7B8/62388289" Ref="C?"  Part="1" 
+AR Path="/607C3564/61FF8CD2/62388289" Ref="C?"  Part="1" 
+AR Path="/607C3564/622D282F/62388289" Ref="C?"  Part="1" 
+AR Path="/607C3564/608CE0EC/62388289" Ref="C?"  Part="1" 
+AR Path="/607C3564/608D59AB/62388289" Ref="C?"  Part="1" 
+AR Path="/607C3564/6087316A/62388289" Ref="C?"  Part="1" 
+AR Path="/60A4EFB9/62388289" Ref="C?"  Part="1" 
+AR Path="/607C3564/62388289" Ref="C59"  Part="1" 
+F 0 "C59" H 9268 2946 50  0000 L CNN
+F 1 "100u" H 9268 2855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 9188 2750 50  0001 C CNN
+F 3 "~" H 9150 2900 50  0001 C CNN
+	1    9150 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 2750 9650 2750
+$Comp
+L Device:CP C?
+U 1 1 62388290
+P 10100 2900
+AR Path="/607C3564/622CD7B8/62388290" Ref="C?"  Part="1" 
+AR Path="/607C3564/61FF8CD2/62388290" Ref="C?"  Part="1" 
+AR Path="/607C3564/622D282F/62388290" Ref="C?"  Part="1" 
+AR Path="/607C3564/608CE0EC/62388290" Ref="C?"  Part="1" 
+AR Path="/607C3564/608D59AB/62388290" Ref="C?"  Part="1" 
+AR Path="/607C3564/6087316A/62388290" Ref="C?"  Part="1" 
+AR Path="/60A4EFB9/62388290" Ref="C?"  Part="1" 
+AR Path="/607C3564/62388290" Ref="C80"  Part="1" 
+F 0 "C80" H 10218 2946 50  0000 L CNN
+F 1 "100u" H 10218 2855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 10138 2750 50  0001 C CNN
+F 3 "~" H 10100 2900 50  0001 C CNN
+	1    10100 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 62388296
+P 9650 2900
+AR Path="/607C3564/622CD7B8/62388296" Ref="C?"  Part="1" 
+AR Path="/607C3564/61FF8CD2/62388296" Ref="C?"  Part="1" 
+AR Path="/607C3564/622D282F/62388296" Ref="C?"  Part="1" 
+AR Path="/607C3564/608CE0EC/62388296" Ref="C?"  Part="1" 
+AR Path="/607C3564/608D59AB/62388296" Ref="C?"  Part="1" 
+AR Path="/607C3564/6087316A/62388296" Ref="C?"  Part="1" 
+AR Path="/60A4EFB9/62388296" Ref="C?"  Part="1" 
+AR Path="/607C3564/62388296" Ref="C60"  Part="1" 
+F 0 "C60" H 9768 2946 50  0000 L CNN
+F 1 "100u" H 9768 2855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 9688 2750 50  0001 C CNN
+F 3 "~" H 9650 2900 50  0001 C CNN
+	1    9650 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 3050 9650 3050
+Wire Wire Line
+	9650 2750 10100 2750
+Connection ~ 9650 2750
+$Comp
+L Device:CP C?
+U 1 1 6238829F
+P 10550 2900
+AR Path="/607C3564/622CD7B8/6238829F" Ref="C?"  Part="1" 
+AR Path="/607C3564/61FF8CD2/6238829F" Ref="C?"  Part="1" 
+AR Path="/607C3564/622D282F/6238829F" Ref="C?"  Part="1" 
+AR Path="/607C3564/608CE0EC/6238829F" Ref="C?"  Part="1" 
+AR Path="/607C3564/608D59AB/6238829F" Ref="C?"  Part="1" 
+AR Path="/607C3564/6087316A/6238829F" Ref="C?"  Part="1" 
+AR Path="/60A4EFB9/6238829F" Ref="C?"  Part="1" 
+AR Path="/607C3564/6238829F" Ref="C81"  Part="1" 
+F 0 "C81" H 10668 2946 50  0000 L CNN
+F 1 "100u" H 10668 2855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 10588 2750 50  0001 C CNN
+F 3 "~" H 10550 2900 50  0001 C CNN
+	1    10550 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 3050 10100 3050
+Wire Wire Line
+	10100 2750 10550 2750
+$Comp
+L power:+12V #PWR?
+U 1 1 623882A7
+P 9650 2750
+AR Path="/60A4EFB9/623882A7" Ref="#PWR?"  Part="1" 
+AR Path="/607C3564/623882A7" Ref="#PWR0190"  Part="1" 
+F 0 "#PWR0190" H 9650 2600 50  0001 C CNN
+F 1 "+12V" H 9665 2923 50  0000 C CNN
+F 2 "" H 9650 2750 50  0001 C CNN
+F 3 "" H 9650 2750 50  0001 C CNN
+	1    9650 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 10100 2750
+Connection ~ 10100 3050
+Wire Notes Line
+	8100 3750 8100 500 
+Wire Wire Line
+	9400 3050 9650 3050
+Wire Wire Line
+	9150 3050 9650 3050
+Wire Notes Line
+	450  3750 11250 3750
+Wire Notes Line
+	8100 2100 11150 2100
+Text Notes 9450 3950 0    79   ~ 0
+Stepper motor drivers
+Text Notes 9650 2350 0    79   ~ 0
+Global decoupling
+Text Notes 9850 700  0    79   ~ 0
+Imported signals
+Wire Notes Line
+	4250 3750 4250 500 
+Text Notes 1500 800  0    79   ~ 0
+Stepper connector
+Text Notes 5700 750  0    79   ~ 0
+Encoder connector
+$EndSCHEMATC

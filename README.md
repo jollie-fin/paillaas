@@ -31,6 +31,7 @@ This made for a weird stack, but it was reliable enough for me to make real demo
 
 I'm sadden that I wasn't able to push this prototype beyond it's MVP status. I had big projects like a Michelson interferometer totally controlled through internet
 
+![Pendulum](./images%20for%20README/pendule_1.jpg 'Angle measurement')
 ![Pendulum video](./images%20for%20README/pendule_2.gif)
 ![Pendulum video](./images%20for%20README/pendule_3.gif)
 

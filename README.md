@@ -45,7 +45,7 @@ In hindsight, just buying a Duet Board would have been the best, but prices at t
 
 ### Ethernet2serial
 
-This is a simple serial converter, based on an atmega and a ENC28J60
+This is a simple serial converter, based on an atmega and an ENC28J60
 
 ![main view](./images%20for%20README/ethernet2serial.png 'Ethernet2Serial')
 
